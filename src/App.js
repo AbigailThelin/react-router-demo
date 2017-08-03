@@ -17,6 +17,8 @@ class App extends Component {
           <Link to="/pageDetails/victory" className="link">Details</Link>
         </div>
         <Switch>
+
+          {/*exact means slash and only a slash  */}
           <Route component={ Page1 } path="/" exact />
           <Route component={ Page2 } path="/page2" />
           <Route component={ Page3 } path="/pageDetails/:id" />
